@@ -25,7 +25,9 @@ export const link = createTable(
     createdAt: int("created_at", { mode: "timestamp" })
       .default(sql`CURRENT_TIMESTAMP`)
       .notNull(),
-    updatedAt: int("updatedAt", { mode: "timestamp" }),
+    updatedAt: int("updatedAt", { mode: "timestamp" })
+      .default(sql`CURRENT_TIMESTAMP`)
+      .notNull(),
   },
   (example) => ({
     nameIndex: index("name_idx").on(example.name),

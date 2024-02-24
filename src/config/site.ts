@@ -12,5 +12,6 @@ export const siteConfig = {
   links: {
     twitter: "https://twitter.com/fischrz",
     github: "https://github.com/fischerdavis",
+    docs: "https://github.com/fischerdavis",
   },
 };
